@@ -5,35 +5,31 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Fredericka_the_Great ;
+  src: url(Fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf);
+}
+
+
 /*------Nav Bar------*/
-nav {
-    background-color: #4f928d;
+.nav {
     position: sticky;
     top: 0;
     max-width: 100%;
-    height: auto;
-    list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     padding: 0.5rem;
     margin: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    
-}
+    background-color: rgba(0,0,0,0.5);
+  }
 
 nav p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fredericka_the_Great';
     font-size: 1.5rem;
     font-weight: 300;
     color: rgb(248, 240, 240);
-    text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-    text-align: center;
-
 }
  nav button {
    display: none;
@@ -52,99 +48,74 @@ nav p {
     object-fit: cover;
   }
 
-#hamburger{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0
-    
-}
-
-.bar1, .bar2, .bar3{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    display: inline-flex;
-}
 /*---------Body-----------------*/
 
 
 body {
+  position: relative;
   background-image: url('Images/portfolio.webp');
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  margin: 0;
-  
 }
 
-.titleWrapper {
+.mainWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainContent{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.mainContent p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(248, 240, 240);
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 
-.mainTextWrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
+.workButton {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.mainText {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: rgb(248, 240, 240);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-align: center;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  
-}
+.workButton a{
+  padding: 1rem;
+  font-family: 'Fredericka_the_Great';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(248, 240, 240);
+  letter-spacing: 1px;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.5);
 
-.infoCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 325px;
-    height: 350px;
-    background-position: center;
-    background-color: #4f928d;
-    border-radius: 50px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    margin: none;
-    padding: none;
-    text-align: center;
-}
+  }
 
 
 /*-------Footer------*/
 
-footer {
+.footer {
   background-color: #4f928d;
   width: 100%;
-  position: absolute;
-  bottom: 0;
   list-style: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: none;
-  margin: none;
+  margin-top: 1rem;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -165,29 +136,7 @@ footer {
     nav p{
       display : none;
     }
-    #hamburger{
-      width: 35px;
-      height: 5px;
-      background-color: black;
-      margin: 6px 0
-      
-  }
-  
-  .bar1, .bar2, .bar3{
-      width: 35px;
-      height: 5px;
-      background-color: black;
-      margin: 6px 0;
-      display: inline-flex;
-  }
-  
-  .mainTextWrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
+
 }
 
 
