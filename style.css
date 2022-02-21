@@ -23,13 +23,23 @@
     background-color: rgba(0,0,0,0.5);
   }
 
-nav p {
+/* nav p {
     font-family: 'Fredericka_the_Great';
     font-size: 1.5rem;
     font-weight: 300;
     color: rgb(248, 240, 240);
     letter-spacing: 1px;
     text-decoration: none;
+} */
+
+nav a{
+  text-decoration: none;
+  font-family: 'Fredericka_the_Great';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(248, 240, 240);
+  letter-spacing: 1px;
+  text-decoration: none;
 }
  nav button {
    display: none;
@@ -143,6 +153,8 @@ body {
     nav p{
       display : none;
     }
+
+   
 
 }
 
