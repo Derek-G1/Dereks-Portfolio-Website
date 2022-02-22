@@ -1,4 +1,4 @@
-/*-------Home Page-----Desktop View----- */
+/*-----------------Home Page-----Desktop View-------------- */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 }
 
 
-/*------Nav Bar------*/
+/*------------Nav Bar------------*/
 .nav {
     position: sticky;
     top: 0;
@@ -58,7 +58,7 @@ nav a{
     object-fit: cover;
   }
 
-/*---------Body-----------------*/
+/*------------Body-----------------*/
 
 
 body {
@@ -115,7 +115,6 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   background-color: rgba(0,0,0,0.5);
-  
   border-radius: 15px;
 
   }
@@ -123,7 +122,7 @@ body {
   
 
 
-/*-------Footer------*/
+/*----------Footer--------------*/
 
 .footer {
   background-color: #4f928d;
@@ -134,6 +133,128 @@ body {
   padding: none;
   margin-top: 1rem;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*-----------Projects Page------------- */
+
+.projectWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.projectBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  border: #4f928d 1px;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+  
+.projectBlock {
+ margin: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  background-color: rgba(0,0,0,0.5);
+  border: #4f928d 1px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  color: azure;
+
+}
+
+/*-----------Contact Page-------------- */
+
+.contactMainWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;      
+}
+
+.contactWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  border: #4f928d 1px;
+  color: aliceblue;
+  width: 50%;
+  
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+  font-size: 1rem;
+  min-height: 7rem;
+  margin-top: 2rem;
+  
+}
+
+.formLabel {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.formInput {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+#message {
+  width: 100%;
+  height: 10rem;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Fredericka_the_Great';
+  font-size: 1rem;
+  font-weight: 300;
+  color: aliceblue;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  margin-top: 3rem;
+  
 }
 
 /* Mobile Views */
