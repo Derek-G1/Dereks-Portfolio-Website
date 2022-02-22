@@ -151,8 +151,6 @@ body {
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(0,0,0,0.5);
-  border: #4f928d 1px;
   margin: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
   
@@ -161,15 +159,62 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 30%;
   height: 30%;
   background-color: rgba(0,0,0,0.5);
   border: #4f928d 1px;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   color: azure;
-
+ 
 }
+
+.projectBlock img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: #4f928d solid 1px;
+  
+}
+
+.projectBlock p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: azure;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.projectBlock h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: azure;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.viewButton {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  }
+
+.viewButton a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'Fredericka_the_Great';
+  font-size: 1.5rem;
+  }
 
 /*-----------Contact Page-------------- */
 
@@ -275,10 +320,18 @@ body {
       display : none;
     }
 
-   
+    .projectBlocks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+  
 
-}
+  }
 
+  
 
 
 
