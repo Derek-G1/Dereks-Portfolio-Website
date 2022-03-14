@@ -27,10 +27,10 @@ try {
     $mail->addAddress('', '');     //Add a recipient
     $mail->addReplyTo($_POST['email'], 'Reply from Derek Gembus');
 
-    $body = "<h1>$_POST[name] has sent you a message from your website.</h1>". "\n\n".
-    "<p>Here is the message:\n\n".
-    "$_POST[message]</p>".
-    "<p>You can contact $_POST[name] at $_POST[email] or $_POST[phone]</p>";
+    $body = "<h1>$_POST[name] has sent you a message from your website.</h1>" . "\n\n" .
+        "<p>Here is the message:\n\n" .
+        "$_POST[message]</p>" .
+        "<p>You can contact $_POST[name] at $_POST[email] or $_POST[phone]</p>";
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
@@ -38,8 +38,8 @@ try {
     $mail->Body    = $body;
     $mail->AltBody = strip_tags($body);
 
-    if($mail->send()){
-        echo("success");
+    if ($mail->send()) {
+        echo ("success");
     }
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

@@ -163,14 +163,16 @@ body {
   border: #4f928d 1px;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   color: azure;
+  border:#4f928d solid 1px;
+
  
 }
 
 .projectBlock img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 300px;
   border: #4f928d solid 1px;
+  object-fit: cover;
   
 }
 
@@ -213,6 +215,8 @@ body {
   font-family: 'Fredericka_the_Great';
   font-size: 1.5rem;
   }
+
+  
 
 /*-----------Contact Page-------------- */
 
@@ -302,6 +306,90 @@ body {
 
 /* Mobile Views */
 
+@media screen and (max-width: 1346px)  {
+  .projectWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  
+  .projectBlocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+    
+  .projectBlock {
+   margin: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 30%;
+    background-color: rgba(0,0,0,0.5);
+    border: #4f928d 1px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    color: azure;
+    border:#4f928d solid 1px;
+  
+   
+  }
+  
+  .projectBlock img {
+    width: 100%;
+    height: 300px;
+    border: #4f928d solid 1px;
+    object-fit: cover;
+    
+  }
+  
+  .projectBlock p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: azure;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  
+  .projectBlock h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: azure;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  
+  .viewButton {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    }
+  
+  .viewButton a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Fredericka_the_Great';
+    font-size: 1.5rem;
+    
+  
+    }
+
 @media screen and (max-width: 739px) {
     
   nav {
@@ -339,13 +427,21 @@ body {
 
     .projectBlock{
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
     }
-  
 
-  }
+    .projectBlock img {
+      width: 100%;
+      height: 100%;
+      border: #4f928d solid 1px;
+      object-fit: cover;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    
 
-  
-
-
-
-
+}
