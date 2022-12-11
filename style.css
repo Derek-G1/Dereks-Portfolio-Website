@@ -77,15 +77,7 @@ body {
   justify-content: space-evenly;
 }
 
-.mainContent{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-  border: #4f928d 1px;;
-}
+
 .mainContent p{
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
